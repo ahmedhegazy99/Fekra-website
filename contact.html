@@ -7,7 +7,7 @@
 <meta name="keywords" content="fekra, scout, scouting">
 <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
 <link rel="icon" type ="image/png" href = "./images/logos/Fekra(png).png"/>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="mainstyle.css">
 <link rel="stylesheet" href="contactStyle.css">
 </head>
 <body >
@@ -22,12 +22,12 @@
 <!--navbar-->
 <nav class="navbar">
 <ul>
-<li><a href="fekra.html">Home</a>  </li>
+<li><a href="index.html">Home</a>  </li>
 <li><a href="about.html" >About</a> </li>
 <li><a href="contact.html" >Contact</a> </li>
 <li><a href="register.html" >Register</a> </li>
 <li><a href="media.html" >Media</a> </li>
-<li><a href="events.html" >Events</a>  </li>
+<li><a href="https://www.facebook.com/pg/fekrascouts/events/?ref=page_internal" >Events</a>  </li>
 </ul>
 </nav>
 <!--end navbar-->
@@ -40,14 +40,14 @@
 <div id="contact">
 <form autocomplete="on" action="contact.php" method="post">
 <lable>Name</lable></br>
-<input type="text" placeholder="Full name" id="name" required autofocus/> </br>
+<input type="text" placeholder="Full name" name="name" id="name" required autofocus/> </br>
 <lable>Mail</lable></br>
-<input type="email" placeholder="someone@mail.com" id="mail" required/> </br>
+<input type="email" placeholder="someone@mail.com" name="mail" id="mail" required/> </br>
 <lable>phone</lable></br>
-<input type="tel" placeholder="Enter mobile number" id="phone" required/>  </br>
+<input type="tel" placeholder="Enter mobile number" name="phone" id="phone" required/>  </br>
 <lable>Message</lable></br>
-<textarea placeholder="leave your message" id="message" required> </textarea> </br>
-<input type="submit" value="Send" class="submit" style="cursor:pointer;"/>
+<textarea placeholder="leave your message" name="message" id="message" required> </textarea> </br>
+<input type="submit" value="Send" name="submit" class="submit" style="cursor:pointer;"/>
 </form>
 </div>
 </div>
