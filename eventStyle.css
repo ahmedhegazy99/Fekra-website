@@ -1,0 +1,22 @@
+
+.eventspace{
+  /*background-color: #ffffff;*/
+  margin: 0 5% 1% 5%;
+  padding: 1% 10% 5% 10%;
+  text-align: center;
+}
+.eventspace img{
+  width: 100%;
+  height: auto;
+  padding-bottom: 3%;
+}
+.gallery{
+  border: 1px solid #ccc;
+  padding-bottom: 3%;
+  margin-bottom: 5%;
+}
+@media only screen and (max-height: 400px) {
+  .eventspace {
+  padding: 1% 15% 5% 15%;
+  }
+}

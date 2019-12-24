@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>Fekra</title>
+<meta charset="utf-8">
+<meta name="description" content="This is a website of Fekra scouting group">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="fekra, scout, scouting">
+<link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+<link rel="icon" type ="image/png" href = "./images/logos/Fekra(png).png"/>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="registerStyle.css">
+</head>
+<body>
+
+<header>
+<div>
+<img src="./images/logos/Fekra(png).png" height="75px" width="80px" id="logo">
+<span id="fekra">Fekra</span>
+<span id="sgg">Scouting & guiding group</span>
+</div>
+
+<!--navbar-->
+<nav class="navbar">
+<ul>
+<li><a href="fekra.html">Home</a>  </li>
+<li><a href="about.html" >About</a> </li>
+<li><a href="contact.html" >Contact</a> </li>
+<li><a href="register.html" >Register</a> </li>
+<li><a href="media.html" >Media</a> </li>
+<li><a href="events.html" >Events</a>  </li>
+</ul>
+</nav>
+<!--end navbar-->
+
+<span id="title">Register</span>
+
+</header>
+<div id="register">
+<form autocomplete="on" action="register.php">
+
+<lable>Name</lable></br>
+<input type="text" placeholder="Full name" id="name" required autofocus/>
+
+<!--stage-->
+<lable>Stage</lable></br>
+<div id="stage">
+<ul>
+<li><lable>Beavers</lable><input type="radio" name="stage" value="b"  required/></li>
+<li><lable>Cubs</lable><input type="radio" name="stage" value="c" required/></li>
+<li><lable>Scouts</lable><input type="radio" name="stage" value="s" required/></li>
+<li><lable>Rover Scouts</lable><input type="radio" name="stage" value="r" required/></li>
+<li><lable>Scout Network</lable><input type="radio" name="stage" value="n" required/></li>
+</ul>
+</div>
+<!--stage end-->
+
+<lable>Mail</lable></br>
+<input type="email" placeholder="someone@mail.com" id="mail" required/>
+
+<lable>mobile</lable></br>
+<input type="tel" placeholder="Enter mobile number" id="phone" min="11" max="11" required/>
+
+<lable>parent's mobile</lable></br>
+<input type="tel" placeholder="Enter mobile number" id="parentphone" min="11" max="11" required/>
+
+<lable>Birthday</lable></br>
+<input type="date"placeholder="d/m/y" id="birthday" max="2018-01-01" required/>
+
+<lable>Address</lable></br>
+<input type="text" placeholder="enter your address" id="address" required/> </br>
+
+<lable>National ID</lable></br>
+<input type="text" placeholder="x xx xx xx xxxxxxx" id="nationalID" min="14" max="14" required/> </br>
+
+<lable>Club's ID</lable></br>
+<input type="text" placeholder="xxx" id="clubID" required/> </br>
+
+<input type="submit" value="Register" class="submit" style="cursor:pointer;"/>
+</form>
+</div>
+
+<footer>
+<a href="https://www.facebook.com/fekrascouts/"><img src="images/logos/facebook.png" height="50px" width="50px" class="social"></a>
+<a href="https://www.instagram.com/fekrascouts/"><img src="images/logos/instagram.png" height="50px" width="50px" class="social"></a>
+<a target="mailto:fekrascoutsgroup@gmail.com" href="www.gmail.com"><img src="images/logos/googleplus.png" height="50px" width="50px" class="social"></a>
+<div id="copyright">©2018 Fekra scouting & guiding group.All rights reserved</div>
+</footer>
+</body>
+</html>

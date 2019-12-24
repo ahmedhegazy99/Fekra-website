@@ -1,0 +1,36 @@
+#register form{
+text-align:center;
+}
+#stage ul{
+position:relative;
+right:15px;
+text-align:center;
+padding-bottom:5px;
+color: #FFD700;
+font-size:12px;
+font-family: 'Cairo', sans-serif;
+letter-spacing:2px;
+list-style-type:none;
+}
+#stage ul li{
+display:inline-block;
+}
+#stage ul lable{
+padding-right:20px;
+}
+.submit{
+width:20%;
+background-color:#FFD700;
+font-size:15px;
+font-weight:bolder;
+font-family: 'Cairo', sans-serif;
+letter-spacing:2px;
+}
+lable{
+display:block;
+padding-bottom:5px;
+color: #FFD700;
+font-size:17px;
+font-family: 'Cairo', sans-serif;
+letter-spacing:2px;
+}

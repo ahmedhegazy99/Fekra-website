@@ -1,0 +1,24 @@
+.submit{
+width:20%;
+background-color:#FFD700;
+font-size:15px;
+font-weight:bolder;
+font-family: 'Cairo', sans-serif;
+letter-spacing:2px;
+}
+lable{
+display:block;
+padding-bottom:5px;
+color: #FFD700;
+font-size:17px;
+font-family: 'Cairo', sans-serif;
+letter-spacing:2px;
+}
+@media only screen and (max-width: 768px) {
+  lable{
+  padding-bottom:0px;
+  font-size:17px;
+  font-family: 'Cairo', sans-serif;
+  letter-spacing:2px;
+  }
+}
