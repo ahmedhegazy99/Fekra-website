@@ -7,8 +7,8 @@
 <meta name="keywords" content="fekra, scout, scouting">
 <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
 <link rel="icon" type ="image/png" href = "./images/logos/Fekra(png).png"/>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="registerStyle.css">
+<link rel="stylesheet" href="mainstyle.css">
+<link rel="stylesheet" href="register.css">
 </head>
 <body>
 
@@ -22,12 +22,12 @@
 <!--navbar-->
 <nav class="navbar">
 <ul>
-<li><a href="fekra.html">Home</a>  </li>
-<li><a href="about.html" >About</a> </li>
-<li><a href="contact.html" >Contact</a> </li>
+<li><a href="index.html" class="home">Home</a>  </li>
+<li><a href="about.html" class="about">About</a> </li>
+<li><a href="contact.html" class="contact">Contact</a> </li>
 <li><a href="register.html" >Register</a> </li>
 <li><a href="media.html" >Media</a> </li>
-<li><a href="events.html" >Events</a>  </li>
+<li><a href="https://www.facebook.com/pg/fekrascouts/events/?ref=page_internal" >Events</a>  </li>
 </ul>
 </nav>
 <!--end navbar-->
@@ -35,49 +35,51 @@
 <span id="title">Register</span>
 
 </header>
+<!--register form start-->
 <div id="register">
-<form autocomplete="on" action="register.php">
+<form autocomplete="on" action="register.php" method="post" >
 
-<lable>Name</lable></br>
-<input type="text" placeholder="Full name" id="name" required autofocus/>
+<lable>Name</lable>
+<input type="text" placeholder="Full name" name="name" id="name" required autofocus/>
 
 <!--stage-->
-<lable>Stage</lable></br>
+<lable>Stage</lable>
 <div id="stage">
 <ul>
-<li><lable>Beavers</lable><input type="radio" name="stage" value="b"  required/></li>
-<li><lable>Cubs</lable><input type="radio" name="stage" value="c" required/></li>
-<li><lable>Scouts</lable><input type="radio" name="stage" value="s" required/></li>
-<li><lable>Rover Scouts</lable><input type="radio" name="stage" value="r" required/></li>
-<li><lable>Scout Network</lable><input type="radio" name="stage" value="n" required/></li>
+<li><lable>Beavers</lable><input type="radio" name="stage" value="Beavers"  required/></li>
+<li><lable>Cubs</lable><input type="radio" name="stage" value="Cubs" required/></li>
+<li><lable>Scouts</lable><input type="radio" name="stage" value="Scouts" required/></li>
+<li><lable>Rover Scouts</lable><input type="radio" name="stage" value="Rover Scouts" required/></li>
+<li><lable>Scout Network</lable><input type="radio" name="stage" value="Scout Network" required/></li>
 </ul>
 </div>
 <!--stage end-->
 
-<lable>Mail</lable></br>
-<input type="email" placeholder="someone@mail.com" id="mail" required/>
+<lable>Mail</lable>
+<input type="email" placeholder="someone@mail.com" name="mail" id="mail" required/>
 
-<lable>mobile</lable></br>
-<input type="tel" placeholder="Enter mobile number" id="phone" min="11" max="11" required/>
+<lable>mobile</lable>
+<input type="tel" placeholder="Enter mobile number" name="phone" id="phone" min="11" max="11" required/>
 
-<lable>parent's mobile</lable></br>
-<input type="tel" placeholder="Enter mobile number" id="parentphone" min="11" max="11" required/>
+<lable>parent's mobile</lable>
+<input type="tel" placeholder="Enter mobile number" name="parentphone" id="parentphone" min="11" max="11" required/>
 
-<lable>Birthday</lable></br>
-<input type="date"placeholder="d/m/y" id="birthday" max="2018-01-01" required/>
+<lable>Birthday</lable>
+<input type="date" placeholder="d/m/y" name="birthday" id="birthday" max="2018-01-01" required/>
 
-<lable>Address</lable></br>
-<input type="text" placeholder="enter your address" id="address" required/> </br>
+<lable>Address</lable>
+<input type="text" placeholder="enter your address" name="address" id="address" required/>
 
-<lable>National ID</lable></br>
-<input type="text" placeholder="x xx xx xx xxxxxxx" id="nationalID" min="14" max="14" required/> </br>
+<lable>National ID</lable>
+<input type="text" placeholder="x xx xx xx xxxxxxx" name="nationalID" id="nationalID" min="14" max="14" required/>
 
-<lable>Club's ID</lable></br>
-<input type="text" placeholder="xxx" id="clubID" required/> </br>
+<lable>Club's ID</lable>
+<input type="text" placeholder="xxx" name="clubID" id="clubID" required/></br>
 
-<input type="submit" value="Register" class="submit" style="cursor:pointer;"/>
+<input type="submit" value="Register"  name="submit" class="submit" style="cursor:pointer;"/>
 </form>
 </div>
+<!--register form end-->
 
 <footer>
 <a href="https://www.facebook.com/fekrascouts/"><img src="images/logos/facebook.png" height="50px" width="50px" class="social"></a>
