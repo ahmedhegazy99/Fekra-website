@@ -1,4 +1,9 @@
-
+/*@import url(https://fonts.googleapis.com/css?family=Cairo);*/
+@import url('./Cairo.ttf');
+@font-face{
+    font-family:'Cairo';
+    src: url('/Cairo.ttf') format('truetype');
+}
 body{
 background-color:#126086;
 padding:0;
@@ -7,7 +12,7 @@ margin: auto;
 margin-top: 8px;
 width:100%;
 position: relative;
-
+font-family: 'Cairo',sans-serif;
 }
 * {
     box-sizing: border-box;
@@ -96,7 +101,6 @@ word-spacing:20px;
 text-align:right;
 color:#B83327;
 background-color:#FFD700;
-
 margin:auto;
 margin-top:25px;
 }
@@ -153,6 +157,31 @@ border-radius:5px;
 width:40%;
 }
 
+.images{
+height:110px;
+width:150px;
+border:3px solid black;
+border-radius: 10%;
+}
+
+.so-box {
+    margin: auto;
+    padding: 5px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    margin-bottom: 25px;
+}
+
+.so-box iframe {
+    max-width: 400px;
+}
+#social-view{
+  width: 100%;
+  position: relative;
+      right: 22%;
+      left: 22%;
+}
+
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     textarea{
@@ -165,20 +194,25 @@ width:40%;
       width: 90%
     }
     .navbar ul{
+      position:relative;
+      bottom:30px;
       font-size: 12px;
-      word-spacing: 2px
+      word-spacing: 2px;
+      padding:3px;
+      padding-top:7px;
     }
     .navbar ul a{
     padding:2px;
-    border:3px dashed #B83327;
+    /*border:3px dashed #B83327;*/
+    border:none;
     position:relative;
     right:10px;
     }
     #title{
     position:relative;
-    bottom:39px;
+    bottom:47px;
     left:10px;
-    font-size:10px;
+    font-size:11px;
     letter-spacing:2px;
     }
     #logo{
@@ -205,29 +239,22 @@ width:40%;
     position:relative;
     left:35%;
     }
-}
-
-.images{
-height:110px;
-width:150px;
-border:3px solid black;
-border-radius: 10%;
-}
-
-.so-box {
-    margin: auto;
+    .so-box {
+    margin: 0px;
     padding: 5px;
     background: #FFFFFF;
     border-radius: 4px;
     margin-bottom: 25px;
-}
+    }
 
-.so-box iframe {
+    .so-box iframe {
     max-width: 400px;
-}
-#social-view{
-  width: 100%;
-  position: relative;
-      right: 22%;
-      left: 22%;
+    }
+
+    #social-view{
+    width: auto;
+    position: relative;
+    right: 0%;
+    left: 0%;
+    }
 }
